@@ -1,0 +1,112 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    max-width: 700px;
+    max-height: 700px;
+    min-width: 200px;
+    min-height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #6f4c18;
+    resize: both;
+    overflow: auto;
+}
+.chessholder{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 2%;
+}
+.row{
+    display: flex;
+    flex-grow: 1;
+}
+.card {
+    background: #fff;
+    border: 1px solid #754a3a;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.img-coin{
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+.chessCoin{
+    height: 100%;
+    width: 100%;
+    padding:10%;
+    z-index: 100;
+}
+
+
+div.row:nth-child(odd) div.card:nth-child(even),
+div.row:nth-child(even) div.card:nth-child(odd){
+    background: burlywood;
+}
+
+
+.notification-banner{
+    width:50%;
+    height:40px;
+    display:block;
+    background:orange;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+  }
+  
+.msg{
+top:25%;
+position:relative;
+}
+
+.on-check{
+    background: orangered !important;
+}
+
+.active-move{
+    background: olivedrab !important;
+}
+
+.aa{
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:30%;
+    height:30%;
+    transform:translate(-50%,-50%);
+    background:#555655;
+    display:flex;
+    flex-direction:column;
+    padding:2%
+}
+.ss{
+    margin:2%;
+    position:relative;
+    background:#242425;
+    flex-grow:1;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:fantasy;
+    font-weight: bolder;
+    font-size: x-large;
+}
