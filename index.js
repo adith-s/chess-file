@@ -14,7 +14,6 @@ var CsBoard ={} ;
         this.fromCardEle = undefined;
         this.whiteOccupiedRanges = new Set();
         this.blackOccupiedRanges = new Set();
-        // this.prevMove = 
        /* this.svg = svg || this.createSvgElement();
         this.use = this.createUseElement();*/
     }
