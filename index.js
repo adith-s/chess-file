@@ -2,7 +2,13 @@
 var CsBoard ={} ;
 
 (function(){
-
+    /**
+     * 
+     * @param {dom to add chessboard} dom 
+     * @param {img design if any} img 
+     * @param {row design if any} row 
+     * @param {card design if any} card 
+     */
     function ChessBoard(dom,img,row,card){
         this.dom = dom;
         this.chessBoardRangeElement = new Map();
